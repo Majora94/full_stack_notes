@@ -1,0 +1,16 @@
+h6{
+    background-color: blueviolet;
+}
+
+.red-text
+{
+    color: red;
+}
+
+#main{
+    color: blue;
+}
+
+p[draggable]{
+    color:green;
+}

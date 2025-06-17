@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet"
+          href ="./section5_style.css"
+    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h5{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h2> Section 5: Introduction to CSS</h2>
+    <h3> Why do we need CSS?</h3>
+    <p> CSS stands for Cascading Style Sheets </p>
+    <p> Cascading recall a image of a cascade/waterfall. It is beacause the style is applied like a cascade. </p>
+    <p> Style sheets is a type of language. It allows how things should looks like.</p>
+    <h3> How to add CSS</h3>
+    <p> There are three ways to add CSS</p>
+    <ol> 
+        <li> Inline </li>
+        <li> Internal</li>
+        <li> External</li>
+
+    </ol>
+    <h4> Inline</h4>
+    <p>It goes in the same line as the html element. Not so comfortable if you have to use the same style to more elements.</p>
+    <p> Example</p>
+<textarea rows="1" cols="50" readonly>
+<h5 style = "background:indianred"> Text </h1>
+</textarea>
+<h5 style = "background:indianred"> Text </h1>
+
+<h4> Internal</h4>
+<p>In the same file sa the html. You have to define for each elemnt its style.</p>
+<p>Example</p>
+<textarea rows="18" cols="50" readonly>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h5{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<h5> Text </h1>
+</body>
+</html>
+</textarea>
+<h5> Text </h1>
+
+<h4> External</h4>
+By adding an external file. It has the same structure as the internal.
+<textarea rows="5" cols="50" readonly>
+File Name: styles.css
+h6{
+    background-color: blueviolet;
+}
+</textarea>
+
+<textarea rows="18" cols="50" readonly>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <link rel = "stylesheet"
+          href ="./section5_style.css"
+    />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h6> Text </h6>
+</body>
+</html>
+</textarea>
+
+<h6> Text </h6>
+
+
+
+<h3> CSS selectors</h3>
+<p> A CSS elector is the part that select the html element  (e.g h1) in order to apply the style</p>
+<p> There are different type of selectors</p>
+
+
+<h4> Element selector </h4>
+<p>  It refers to the element itself like h1 or p </p>
+ 
+<h4> Class selector </h4>
+<p>  It requires a special symbolo (.) followed by the name of the class.  </p>
+<p> A class is an attribute that we can add to every html element </p>
+<p> Example</p>
+
+<textarea rows="6" cols="50" readonly>
+File Name: styles.css
+.red-text
+{
+    color: red;
+}
+</textarea>
+
+<textarea rows="§" cols="50" readonly>
+<h2 class = "red-text"> Red </h2>
+</textarea>
+<h2 class = "red-text"> Red </h2>
+
+<h4> ID selector </h4>
+<p> It has a special symmbol (#) followed by the name of the ID.</p>
+<p> It selects all elements with a particular attribute</p>
+<p>Simlar to class selector but class can be applied to many elements while ID should be applied only to one (unique). </p>
+<p> Example </p>
+
+<textarea rows="5" cols="50" readonly>
+File Name: styles.css
+#main{
+    color: blue;
+}
+</textarea>
+
+
+<textarea rows="§" cols="50" readonly>
+<h2 id = "main"> Red </h2>
+</textarea>
+<h2 id = "main"> Red </h2>
+
+<h4> Attribute selecotr </h4>
+<p> It selects all the attribute that have a particulat attribute or an attribute value! </p>
+<p> example</p>
+<textarea rows="5" cols="50" readonly>
+File Name: styles.css
+p[draggable]{
+    color:green;
+}
+</textarea>
+<textarea rows="3" cols="50" readonly>
+<p draggable="True">  Drag me</p>
+<p>  Do not drag me</p>
+</textarea>
+
+
+<p draggable="True">  Drag me</p>
+<p>  Do not drag me</p>
+
+<h4> Universal selecotr </h4>
+<p> It select all the style. It has * has character</p>
+</body>
+</html>
+
+
