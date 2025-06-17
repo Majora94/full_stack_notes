@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3> <a href = "index.html" > Home</a></h3>
+    <h3> <a href = "section2.html" > Section 2: Introduction to HTML</a></h3>
+    <h3> <a href = "section3.html" > Section 3: Intermediate HTML</a></h3>
+    <h3> <a href = "section4.html" > Section 4: Multi-page Websites</a></h3>
+
+<h2> Section 4: Multi-page Websites</h2>
+<h3> Computer File paths</h3>
+There are two way to define a position of a file inside a computer:
+<ol>
+  <li> Absoulte path: Is the file path realtive to the root (e.g C:) </li>
+  <li> Relative path: Is a file path realtive to the current work path. Most used for web-develpment since it is not important if you move the full project. </li>
+</ol>
+
+There are special characters to navigate
+<ol>
+  <li> .. : It goes to the precedent directory. </li>
+  <li> .: It means from here, the current directory. </li>
+</ol>
+
+<h3> What are web-pages?</h3>
+This is usally a structure for a Multi-page web site
+<ul>
+  <li>Project</li>
+  <ul> 
+    <li> index.html</li>
+    <li> about.html</li>
+    <li> assests</li>
+    <ul>
+      <li>Images</li>
+      <ul>
+        <li> cat.png</li>
+      </ul>
+ 
+    </ul>
+  </ul>
+</ul>
+
+To link to other page one can use the anchor element.
+
+
+<h3>The html Boilerplate</h3>
+Let'see what are all the componennt in a html File
+
+<textarea rows="12" cols="60" readonly>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+</body>
+</html>
+</textarea> 
+<ul>
+  <li><textarea rows="1" cols="20" readonly> <!DOCTYPE html> </textarea>  It tells the browser wich version of html the file was written in.</li>
+  <lI><textarea rows="3" cols="20" readonly> <html lang="en">  
+    ... 
+  </html></textarea>  Every other elements will go inside here. The lang tell the browser the language inside.
+  </li>
+    <lI><textarea rows="3" cols="20" readonly> <head>
+    ... 
+  </head></textarea> Are in wich important information about the websites are stored. For example how to render it.
+  </li>
+  </li>
+    <lI><textarea rows="3" cols="20" readonly><meta charset="UTF-8"></textarea> characters encoding of the website.
+  </li>
+    </li>
+    <lI><textarea rows="3" cols="20" readonly> <title>Document</title> </textarea>.  Title of the document shown in the tab of the browser.
+  </li>
+</li>
+    <lI><textarea rows="3" cols="20" readonly> <body>
+    ... 
+  </body></textarea> Is where the content of the webiste must be written.
+  
+
+
+</ul>
+
+</body>
+</html>
